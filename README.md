@@ -9,6 +9,6 @@ Rome wasn't built in a day, and neither were my programming skills. It should be
 they are always **original**, and my own best work at the time of writing. Please note that these solutions are provided for educational purposes only. 
 It is recommended that you try to solve the problems on your own before referring to the solutions in this repository.
 
-## Table of Contents
-The repository is organized by problem category and difficulty level. Some concepts contained in this repository include Arrays, Linked Lists, Trees, Graphs, Hash Tables, Sorting and Searching, Recursion, Combinatorics, and more.
+## Content Covered
+The repository is organized by problem category and difficulty level. Some concepts contained in this repository include Arrays, Linked Lists, Trees, Graphs, Hash Tables, Sorting and Searching, Recursion, Combinatorics, and more. Thanks for checking out my repo! 
 
