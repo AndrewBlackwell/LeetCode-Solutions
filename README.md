@@ -11,4 +11,3 @@ It is recommended that you try to solve the problems on your own before referrin
 
 ## Content Covered
 The repository is organized by problem category and difficulty level. Some concepts contained in this repository include Arrays, Linked Lists, Trees, Graphs, Hash Tables, Sorting and Searching, Recursion, Combinatorics, and more. Thanks for checking out my repo! 
-
