@@ -27,17 +27,26 @@
 // Only one valid answer exists.
 //-------------------------------
 
-class Solution {
-    public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> m = new HashMap<>();
-        for (int i = 0;; ++i) {
-            int x = nums[i];
-            int y = target - x;
-            if (m.containsKey(y)) {
-                return new int[] {m.get(y), i};
+class Solution 
+{
+    public int[] twoSum(int[] nums, int target) 
+    {
+        int n = nums.length;
+        // iterate over the array
+        for (int i = 0; i < n; i++) 
+        {
+            // iterate over the remaining elements of the array
+            for (int j = i + 1; j < n; j++) 
+            {
+                // check if the sum of the two elements equals to the target
+                if (nums[i] + nums[j] == target) 
+                {
+                    // return the indices of the two elements
+                    return new int[]{i, j};
+                }
             }
-            m.put(x, i);
         }
+        // if no such pair of elements exists, return empty array.
+        return new int[]{};
     }
 }
-
