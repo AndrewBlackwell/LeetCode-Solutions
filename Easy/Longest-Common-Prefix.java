@@ -50,4 +50,4 @@ class Solution
     }
 }
 
-//Time complexity is O(1)
+//Time complexity is O(1). 0 MS runtime, beats 89%.
