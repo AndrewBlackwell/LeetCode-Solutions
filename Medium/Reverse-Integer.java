@@ -16,8 +16,10 @@
 // returns 0 when the reversed integer overflows.
 //-----------------------------------------------
 
-class Solution {
-    public int reverse(int x) {
+class Solution 
+{
+    public int reverse(int x) 
+    {
         long res = 0;
         for (; x != 0; x /= 10)
             res = res * 10 + x % 10;
