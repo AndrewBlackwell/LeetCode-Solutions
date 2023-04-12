@@ -1,0 +1,47 @@
+//-----------------------------------------------------------------------
+// Given an integer num, return the number of steps to reduce it to zero.
+// In one step, if the current number is even, you have to divide it by 2, 
+// otherwise, you have to subtract 1 from it.
+// 
+// Example 1:
+// Input: num = 14
+// Output: 6
+// Explanation: 
+// Step 1) 14 is even; divide by 2 and obtain 7. 
+// Step 2) 7 is odd; subtract 1 and obtain 6.
+// Step 3) 6 is even; divide by 2 and obtain 3. 
+// Step 4) 3 is odd; subtract 1 and obtain 2. 
+// Step 5) 2 is even; divide by 2 and obtain 1. 
+// Step 6) 1 is odd; subtract 1 and obtain 0.
+// 
+// Example 2:
+// Input: num = 8
+// Output: 4
+// Explanation: 
+// Step 1) 8 is even; divide by 2 and obtain 4. 
+// Step 2) 4 is even; divide by 2 and obtain 2. 
+// Step 3) 2 is even; divide by 2 and obtain 1. 
+// Step 4) 1 is odd; subtract 1 and obtain 0.
+//--------------------------------------------
+
+class Solution 
+{
+    public int numberOfSteps(int num) 
+    {
+        int steps = 0;
+        while(num != 0) 
+        {
+            num = num % 2 == 0 ? num / 2 : num - 1; steps++;
+        }
+        return steps;
+    }
+}
+
+// The method takes an integer parameter num. It initializes a variable steps to zero.
+// It then uses a while loop to check if the value of num is not equal to zero.
+// In each iteration of the loop, the code checks if num is even (i.e. divisible by 2)
+// using the ternary operator. If num is even, it divides num by 2 and assigns the 
+// result back to num. Otherwise, it subtracts 1 from num and assigns the result back to num.
+// In either case, it increments the steps variable by 1. The loop continues until num becomes zero.
+// 
+// The time complexity of the numberOfSteps method is O(log n), where n is the value of the input parameter num.
